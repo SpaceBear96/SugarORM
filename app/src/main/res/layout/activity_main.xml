@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:orientation="vertical">
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="32dp"
-        android:clickable="true"
-        android:onClick="callRegisterForm"
-        app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_menu_add" />
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_height="match_parent"
+    <EditText
+        android:id="@+id/fullname_input"
         android:layout_width="match_parent"
-        android:id="@+id/user_list"/>
+        android:layout_height="wrap_content"
+        android:hint="Fullname"/>
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="Registrar"
+        android:onClick="callRegistrar"/>
+
+</LinearLayout>
