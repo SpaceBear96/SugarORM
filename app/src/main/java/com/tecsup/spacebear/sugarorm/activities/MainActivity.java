@@ -1,7 +1,9 @@
-package com.tecsup.spacebear.sugarorm;
+package com.tecsup.spacebear.sugarorm.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.tecsup.spacebear.sugarorm.R;
 
 public class MainActivity extends AppCompatActivity {
 
